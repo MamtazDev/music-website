@@ -19,7 +19,7 @@ const Timeline = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
           <div className=" create_timeline">
             <h3 className="text_design create_text">Create timeline</h3>
-            <button class="btn btn-neutral create_now_btn">Create Now</button>
+            <Link to="/musicTimeline" className="w-full"><button class="btn btn-neutral create_now_btn">Create Now</button></Link>
           </div>
           <div className="create_timeline">
             <h3 className="text_design create_text">Edit timeline</h3>
