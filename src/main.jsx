@@ -5,13 +5,14 @@ import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation.jsx";
-import Accounts from "./components/Accounts/Accounts.jsx";
 import Error from "./components/Error/Error.jsx";
-import Login from "./components/Login/Login.jsx";
-import Payment from "./components/Payment/Payment.jsx";
+
 import Home from "./components/Home/Home.jsx";
 import Timeline from "./components/Timeline/Timeline.jsx";
 import CreateTimeline from "./components/CreateTimeline/CreateTimeline.jsx";
+import Dashboard from "./components/Dashboard/Dashboard.jsx";
+import Register from "./components/Login/Register/Register.jsx";
+import MusicTimeline from "./components/MusicTimeline/MusicTimeline.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,24 +20,32 @@ const router = createBrowserRouter([
     element: <Navigation />,
     errorElement: <Error></Error>,
     children: [
-      {
-        path: "/accounts",
-        element: <Accounts />,
-      },
+   
       {
         path: "/",
         element: <Home />,
       },
       {
-        path: "/support",
+        path: "/timeline",
         element: <Timeline />,
       },
       {
         path: "/createTimeline",
         element: <CreateTimeline />,
       },
-     
+      {
+        path: "/musicTimeline",
+        element: <MusicTimeline />,
+      },
+      {
+        path: "/signup",
+        element: <Register />,
+      },
+
     ],
+  }, {
+    path: "/dashboard",
+    element: <Dashboard />,
   },
 ]);
 

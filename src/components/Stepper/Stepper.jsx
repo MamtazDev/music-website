@@ -3,8 +3,8 @@ import "./Stepper.css";
 import stepperBg from '../../assets/stepperbg.png'
 const Stepper = () => {
   return (
-    <>
-      <div class="timeline-section stepper">
+    <div className="stepper">
+      <div class="timeline-section ">
         <div class="button_design">
           <button class="button_design">1971</button>
         </div>
@@ -119,7 +119,7 @@ const Stepper = () => {
 
 
 
-    </>
+    </div>
 
 
 

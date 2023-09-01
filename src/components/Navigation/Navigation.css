@@ -65,16 +65,22 @@
   margin: auto;
   height: 100px !important;
 
+  /* //new add */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav_container {
   background-color: #333;
+  color: white !important;
+  /* max-height: 100px; */
 }
 
 
 .topnav a {
-  float: left;
-  display: block;
+  /* float: left;
+  display: block; */
   color: #f2f2f2;
   text-align: center;
   padding: 38px 0px;
@@ -94,15 +100,20 @@
 
 .logo {
   margin-right: 95px !important;
+  display: flex;
+  align-items: center !important;
+  padding-top: 10px;
   /* margin-left: 94px; */
 }
-
-
-
 .navlinks {
   color: #DCDADA !important;
   text-decoration: none !important;
   margin-right: 44px !important;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 
@@ -125,7 +136,8 @@
   flex-shrink: 0;
   border-radius: 12px;
   background: var(--greyscale-grey-100, #F5F5F5);
-/* margin-bottom: -5px !important; */
+  padding-left: 10px;
+  /* margin-bottom: -5px !important; */
 }
 
 @media screen and (max-width: 600px) {
@@ -138,19 +150,15 @@
     display: block;
     margin-top: 30px;
   }
-}
 
-@media screen and (max-width: 600px) {
   .topnav .responsive {
     position: relative;
-
   }
 
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
-
   }
 
   .topnav.responsive a {
@@ -160,6 +168,7 @@
     margin-left: 20px !important;
   }
 }
+
 
 @media screen and (max-width: 768px) {
   .topnav a:not(:first-child) {

@@ -1,5 +1,8 @@
 .stepper {
-    background-image: url('../../assets/stepperbg.png');
+    background-image: url('../../assets/stepperbg.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 /* Additional styles if necessary */
@@ -107,7 +110,7 @@
 .timeline-content {
     background-color: #EEE;
     color: var(--04, #202227);
-    width: 484px;
+    max-width: 484px;
     height: 244px;
     border-radius: 12px;
     border: 1px solid var(--03, #8E6147);
@@ -195,6 +198,7 @@
 .right_text {
     margin-top: 40px;
     margin-left: 80px;
+    margin-right: 10px;
 }
 
 .edit_icon {
@@ -224,17 +228,16 @@
 }
 
 
-
-
-/* responsive */
-@media(max-width: 767px) {
-    .timeline-items::before {
+@media(max-width: 1024px) {
+    /* .timeline-items::before {
         left: 7px;
-    }
+    } */
+
     .timeline-item:nth-child(odd) {
         padding-right: 0;
         text-align: left;
     }
+
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
         padding-left: 37px;
@@ -253,11 +256,79 @@
         height: 62% !important;
         top: 20% !important;
         background-color: #2f363e;
-        left: calc(6% - 1px);
+        left: calc(3% - 1px);
     }
 
     .timeline-content {
         margin-left: 50px;
     }
-   
+
+}
+
+/* responsive */
+@media(max-width: 768px) {
+    .timeline-dot {
+        height: 40px !important;
+        width: 40px !important;
+        font-size: 16px !important;
+    }
+
+    .left_text {
+        padding-left: 10px;
+        padding-top: 9px;
+    }
+
+    .right_text {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .timeline-items::before {
+        left: 7px;
+    }
+
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 37px;
+    }
+
+    .timeline-dot {
+        left: -9px !important;
+        height: 80px;
+        width: 80px;
+    }
+
+    .timeline-items::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 58% !important;
+        top: 20% !important;
+        background-color: #2f363e;
+        /* left: calc(3% - 1px); */
+    }
+
+    .timeline-content {
+        margin-left: 10px;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .parent_text {
+        flex-direction: column;
+        height: unset !important;
+    }
+
+    .brandname,
+    .kiss,
+    .songname,
+    .my_story {
+        margin-bottom: 0 !important;
+    }
 }

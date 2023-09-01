@@ -1,22 +1,74 @@
 import React, { useState } from "react";
 import logo from "../../assets/Logo.png";
 import cart from "../../assets/cart.png"
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import "./Navigation.css";
 import Footer from "../Footer/Footer";
 
 const Navigation = () => {
   const userData = JSON.parse(localStorage.getItem("users"));
   const [isResponsive, setIsResponsive] = useState(false);
+  let location = useLocation();
 
-  console.log(isResponsive, "klkl");
-
+  const [open, setOpen] = useState(false);
   const toggleResponsive = () => {
     console.log("clickl")
     setIsResponsive(prevState => !prevState);
   };
+
+  /* nipa apu code */
+  const menuItems = (
+    <>
+      <li className="">
+        <NavLink className="navlinks" to="/"><img src={logo} class="logo" alt="logo" width="60" height="60" /></NavLink>
+      </li>
+      <li className="">
+        <NavLink className="navlinks" to="/">Home</NavLink>
+      </li>
+      <li className=" ">
+        <NavLink className="navlinks" to="/">Accounts</NavLink>
+      </li>
+
+      <li className="">
+        <NavLink className="navlinks" to="/">Payment Information</NavLink>
+      </li>
+      <li className="">
+        <Link to="/" class="navlinks">Contact Us</Link>
+      </li>
+      <li className="">
+        <NavLink className="navlinks" to="/">Support</NavLink>
+      </li>
+
+      <li className="">
+        <Link class="navlinks"><input type="text" name="" id="" className="input_design" placeholder="Find your favorite artists.." /> </Link>
+      </li>
+      <li className="">
+        <Link to="/">
+          <i class="fa-regular fa-bell notification"></i>
+        </Link>
+      </li>
+      <li className="">
+        <Link to="/">
+          <i class="fa-solid fa-bag-shopping notification"></i>
+        </Link>
+      </li>
+      <li className="">
+        <Link to="/">
+          <i class="fa-regular fa-user notification"></i>
+        </Link>
+      </li>
+
+
+
+      {/* notification panel */}
+
+
+
+    </>
+  );
+
   return (
-    <div className="relative h-screen">
+    <div className="">
       {/* <div className="navbar bg_dark ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -110,8 +162,8 @@ const Navigation = () => {
 
         </div>
       </div> */}
-      <div class="nav_container">
-        <div id="myTopnav" className={`topnav ${isResponsive ? 'responsive' : ''}`}>
+
+      {/*     <div id="myTopnav" className={`topnav ${isResponsive ? 'responsive' : ''}`}>
           <Link to="#home" class="active"> <img class="logo" src={logo} alt="" /></Link>
           <Link to="/" class="navlinks">Home </Link>
           <Link to="/accounts" class="navlinks">Accounts</Link>
@@ -131,9 +183,32 @@ const Navigation = () => {
           <Link to="/" class="icon" onClick={toggleResponsive}>
             <i class="fa fa-bars"></i>
           </Link>
+        </div> */}
+      {/* <nav className="nav_container">
+        <div className="md:hidden flex flex-row items-center justify-between px-4 py-2">
+          <div className="flex flex-row items-center">
+            <img src={logo} alt="logo" width="60" height="60" />
+
+          </div>
+          <div
+            onClick={() => setOpen(!open)}
+            className="w-8 h-8 text-white font-bold"
+          >
+            {open ? <i class="fa-solid fa-xmark"></i> : <i class="fa fa-bars"></i>}
+          </div>
         </div>
-      </div>
+        <ul
+          className={`nav_container md:flex  justify-center items-center p-4  w-full absolute md:static duration-500 ease-in z-50 ${open ? "top-15" : "top-[-450px]"
+            }`}
+        >
+          {menuItems}
+        </ul>
+      </nav> */}
+
+
+
       <Outlet />
+
       <Footer />
     </div>
   );
