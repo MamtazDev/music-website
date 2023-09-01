@@ -17,8 +17,6 @@
     margin-bottom: 20px;
 }
 
-
-
 .create_music_button {
     display: inline-flex;
     height: 67px;
@@ -65,4 +63,54 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.shopify {
+    border-radius: 4px;
+    background: rgba(149, 191, 70, 0.06);
+    width: 157px;
+    height: 115px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube {
+    border-radius: 4px;
+    background: rgba(255, 0, 0, 0.06);
+    width: 157px;
+    height: 115px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apple {
+    border-radius: 4px;
+    background: rgba(253, 76, 97, 0.04);
+    width: 157px;
+    height: 115px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline_icons {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 6px;
+}
+
+@media screen and(max-width:768) {
+    .timeline_icons {
+        display: flex;
+        flex-wrap: wrap !important;
+     
+    }
 }

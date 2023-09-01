@@ -184,7 +184,7 @@ const Navigation = () => {
             <i class="fa fa-bars"></i>
           </Link>
         </div> */}
-      {/* <nav className="nav_container">
+      <nav className="nav_container">
         <div className="md:hidden flex flex-row items-center justify-between px-4 py-2">
           <div className="flex flex-row items-center">
             <img src={logo} alt="logo" width="60" height="60" />
@@ -203,7 +203,7 @@ const Navigation = () => {
         >
           {menuItems}
         </ul>
-      </nav> */}
+      </nav>
 
 
 

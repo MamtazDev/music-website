@@ -22,26 +22,29 @@ const MusicTimeline = () => {
                     <div>
                         {/* <textarea name="" id="" cols="30" rows="10"></textarea> */}
                         <small className='share_text'>Share  this  </small>
-                        <div className='facebookDiv'>
-                            <div>
-                                <img src={facebook} alt="" />
+                        <div className='grid grid-cols-1 md:grid-cols-4 gap-4 center xs:items-center'>
+                            <div className='facebookDiv'>
+                                <div className='flex '>
+                                    <img src={facebook} alt="" />
+                                </div>
+                            </div>
+                            <div className='shopify'>
+                                <div>
+                                    <img src={shopify} alt="" />
+                                </div>
+                            </div>
+                            <div className='youtube'>
+                                <div>
+                                    <img src={youtube} alt="" />
+                                </div>
+                            </div>
+                            <div className='apple'>
+                                <div>
+                                    <img src={apple} alt="" />
+                                </div>
                             </div>
                         </div>
-                        <div className='facebookDiv'>
-                            <div>
-                                <img src={facebook} alt="" />
-                            </div>
-                        </div>
-                        <div className='facebookDiv'>
-                            <div>
-                                <img src={facebook} alt="" />
-                            </div>
-                        </div>
-                        <div className='facebookDiv'>
-                            <div>
-                                <img src={facebook} alt="" />
-                            </div>
-                        </div>
+
                     </div>
 
                 </div>
