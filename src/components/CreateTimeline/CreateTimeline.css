@@ -21,10 +21,11 @@
     line-height: 150%;
     margin-bottom: 50px;
 }
-.add_item_field{
+
+.add_item_field {
     border-radius: 8px;
-border: 1px solid var(--neutral-300, #D7D7D7) !important;
-background: var(--07, #F9F9F9) !important;
+    border: 1px solid var(--neutral-300, #D7D7D7) !important;
+    background: var(--07, #F9F9F9) !important;
 }
 
 
@@ -47,4 +48,12 @@ background: var(--07, #F9F9F9) !important;
     font-weight: 600;
     line-height: 120%;
     /* 24px */
+}
+
+.edit_button:hover {
+
+    background: var(--03, #8E6147);
+
+    color: var(--02, #F7E5CD);
+
 }
