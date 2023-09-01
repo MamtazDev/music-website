@@ -26,7 +26,8 @@
 }
 
 .fixed {
-  position: fixed;
+  margin-top: 100px;
+  position: static;
   bottom: 0;
   width: 100% !important;
   overflow: hidden;
