@@ -51,6 +51,11 @@
     font-weight: 600;
     line-height: 120%;
     /* 19.2px */
+    margin-bottom: 12px !important;
+}
+
+.text_area {
+    margin-bottom: 20px;
 }
 
 .facebookDiv {
@@ -105,12 +110,13 @@
     display: flex;
     /* flex-wrap: wrap; */
     gap: 6px;
+    margin-top:12px !important ;
 }
 
 @media screen and(max-width:768) {
     .timeline_icons {
         display: flex;
         flex-wrap: wrap !important;
-     
+
     }
 }

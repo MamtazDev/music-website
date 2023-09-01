@@ -23,7 +23,7 @@ const Timeline = () => {
           </div>
           <div className="create_timeline">
             <h3 className="text_design create_text">Edit timeline</h3>
-            <button class="btn create_now_btn btn-neutral">Edit Now</button>
+           <Link to="/createTimeline" className="w-full"> <button class="btn create_now_btn btn-neutral">Edit Now</button></Link>
           </div>
         </div>
       </div>
