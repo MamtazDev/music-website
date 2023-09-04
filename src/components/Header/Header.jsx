@@ -16,8 +16,8 @@ const Header = () => {
 
   const menuItems = (
     <>
-      <li>
-        <NavLink className="navlinks flex items-center " to="/">
+      <li className="hidden lg:block">
+        <NavLink className="navlinks flex items-center  " to="/">
           <img src={logo} className="logo" alt="logo" />
         </NavLink>
       </li>
