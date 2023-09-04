@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import './index.css'
-import Navigation from './components/Navigation/Navigation'
-import { Outlet } from 'react-router-dom'
+import "./index.css";
+import "./App.css";
+
+import Layout from "./components/Layout/layout";
 
 function App() {
   return (
-    <div className='container'>
-      <Navigation/>
+    <div className="container">
+      <Layout />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
