@@ -12,7 +12,7 @@ const MusicTimeline = () => {
         <h1 className="text-[#0F0609] leading-[150%] text-[32px] font-[600] mb-[30px]">
           My Music Timeline
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[24px] mb-[142px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[24px] mb-[142px]">
           {/* left side */}
           <div>
             <input
@@ -140,7 +140,7 @@ const MusicTimeline = () => {
 
             {/* <textarea name="" id="" cols="30" rows="10"></textarea> */}
             <p className="share_text">Share this </p>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 center xs:items-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 center xs:items-center">
               <div className="facebookDiv">
                 <div className="flex ">
                   <img src={facebook} alt="" />

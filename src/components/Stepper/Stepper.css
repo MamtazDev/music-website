@@ -50,9 +50,7 @@
     border-radius: 8px;
     background: var(--04, #202227);
     color: var(--02, #F7E5CD);
-    font-family: Poppins;
     font-size: 40px;
-    font-style: normal;
     font-weight: 600;
     line-height: 150%;
 }
@@ -64,9 +62,7 @@
     border-radius: 8px;
     background: var(--04, #202227);
     color: var(--02, #F7E5CD);
-    font-family: Poppins;
     font-size: 40px;
-    font-style: normal;
     font-weight: 600;
     line-height: 150%;
 }
@@ -99,9 +95,7 @@
     justify-content: center !important;
     align-items: center !important;
     color: var(--06, #FFF);
-    font-family: Poppins;
     font-size: 30px;
-    font-style: normal;
     font-weight: 600;
     line-height: 150%;
     /* 60px */
@@ -122,7 +116,6 @@
 
 .brandname {
     color: var(--04, #202227);
-    font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -133,9 +126,7 @@
 
 .kiss {
     color: var(--01, #696969);
-    font-family: Poppins;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 120%;
     margin-bottom: 20px;
@@ -145,18 +136,15 @@
 
 .songname {
     color: var(--04, #202227);
-    font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
-    /* 19.2px */
     margin-bottom: 14px;
 }
 
 .love_it_loud_text {
     color: var(--01, #696969);
-    font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -172,9 +160,7 @@
 
 .my_story {
     color: var(--04, #202227);
-    font-family: Poppins;
     font-size: 16px;
-    font-style: normal;
     font-weight: 600;
     line-height: 120%;
     margin-bottom: 14px;
@@ -182,9 +168,7 @@
 
 .story_details {
     color: var(--01, #696969);
-    font-family: Poppins;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 156%;
     width: 235px;
@@ -270,7 +254,7 @@
     .timeline-dot {
         height: 40px !important;
         width: 40px !important;
-        font-size: 16px !important;
+        font-size: 11px !important;
     }
 
     .left_text {

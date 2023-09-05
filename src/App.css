@@ -8,6 +8,7 @@ body {
 .container {
   max-width: 1320px !important;
   margin: auto;
+  padding: 10px;
 }
 
 input:focus-visible {
