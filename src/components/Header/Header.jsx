@@ -19,8 +19,8 @@ const Header = () => {
 
   const menuItems = (
     <>
-      <li className="hidden lg:block">
-        <NavLink className="navlinks flex items-center  " to="/">
+      <li className="hidden xl:block mr-[45px]">
+        <NavLink className="navlinks flex items-center " to="/">
           <img src={logo} className="logo" alt="logo" />
         </NavLink>
       </li>
@@ -51,8 +51,8 @@ const Header = () => {
         </NavLink>
       </li>
 
-      <li>
-        <Link className="navlinks">
+      <li className="me-[56px]">
+        <Link>
           <input
             type="text"
             className="input_design"
@@ -62,19 +62,19 @@ const Header = () => {
       </li>
 
       <li className="flex items-center">
-        <Link className="me-4" to="/">
+        <Link className="me-[24px]" to="/">
           <img src={bell} alt="" />
         </Link>
       </li>
 
       <li className="flex items-center">
-        <Link className="me-4" to="/">
+        <Link className="me-[24px]" to="/">
           <img src={profile} alt="" />
         </Link>
       </li>
 
       <li className="flex items-center">
-        <Link className="me-4" to="/">
+        <Link className="" to="/">
           <img src={bag} alt="" />
         </Link>
       </li>
@@ -83,7 +83,7 @@ const Header = () => {
 
   return (
     <nav className="nav_container">
-      <div className="lg:hidden flex flex-row items-center justify-between px-4 py-2">
+      <div className="xl:hidden flex flex-row items-center justify-between px-4 py-2">
         <div className="flex flex-row items-center">
           <img src={logo} alt="logo" width="60" height="60" />
         </div>
@@ -99,7 +99,7 @@ const Header = () => {
         </div>
       </div>
       <ul
-        className={`nav_container flex flex-col lg:flex-row justify-center items-center p-4  w-full absolute md:static duration-500 ease-in z-50 ${
+        className={`nav_container flex flex-col xl:flex-row justify-center items-center p-4 gap-4 xl:gap-0 w-full absolute md:static duration-500 ease-in z-50 ${
           open ? "top-15" : "top-[-450px]"
         }`}
       >
