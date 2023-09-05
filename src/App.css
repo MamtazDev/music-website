@@ -7,9 +7,9 @@ body {
 
 .container {
   max-width: 1320px !important;
+  margin: auto;
 }
 
 input:focus-visible {
   outline: none !important;
 }
-

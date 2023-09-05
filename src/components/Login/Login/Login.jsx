@@ -21,55 +21,57 @@ const Login = () => {
       }
     }; */
   return (
-    <div className="container">
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="">
-          <img src={Frame} alt="Sample image" />
-        </div>
-        <form className="form_design">
+    <div className="mt-[85px] mb-[94px]">
+      <div className="container">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="">
-            <p className="mx-4 mb-0 text-center login_header">
-              Login/ Registration
-            </p>
-            <label
-              htmlFor=""
-              style={{ marginBottom: "10px" }}
-              className="label_design"
-            >
-              Email
-            </label>
-            <input
-              style={{ marginTop: "8px" }}
-              className="login_input text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded"
-              type="text"
-              placeholder="Email Address"
-            />
-
-            <label htmlFor="" className="label_design">
-              Password
-            </label>
-            <input
-              style={{ marginTop: "8px" }}
-              className="login_input text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded mt-4"
-              type="password"
-              placeholder="Password"
-            />
-
-            <Link to="/timeline">
-              <button class="neutral_btn w-full">Sign In</button>
-            </Link>
-            <div style={{ marginTop: "40px" }} className="text-center">
-              <span className="have_an_account_text">
-                {" "}
-                Already have an account?{" "}
-              </span>
-              <a href="/signup" class="sign_up_link">
-                Sign up
-              </a>
-            </div>
+            <img src={Frame} alt="Sample image" />
           </div>
-        </form>
-      </section>
+          <form className="form_design">
+            <div className="">
+              <p className="mx-4 mb-0 text-center login_header">
+                Login/ Registration
+              </p>
+              <label
+                htmlFor=""
+                style={{ marginBottom: "10px" }}
+                className="label_design"
+              >
+                Email
+              </label>
+              <input
+                style={{ marginTop: "8px" }}
+                className="login_input text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded"
+                type="text"
+                placeholder="Email Address"
+              />
+
+              <label htmlFor="" className="label_design">
+                Password
+              </label>
+              <input
+                style={{ marginTop: "8px" }}
+                className="login_input text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded mt-4"
+                type="password"
+                placeholder="Password"
+              />
+
+              <Link to="/timeline">
+                <button class="neutral_btn w-full">Sign In</button>
+              </Link>
+              <div style={{ marginTop: "40px" }} className="text-center">
+                <span className="have_an_account_text">
+                  {" "}
+                  Already have an account?{" "}
+                </span>
+                <a href="/signup" class="sign_up_link">
+                  Sign up
+                </a>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
     </div>
   );
 };
