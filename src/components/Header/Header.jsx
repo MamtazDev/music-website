@@ -99,7 +99,7 @@ const Header = () => {
         </div>
       </div>
       <ul
-        className={`nav_container flex flex-col xl:flex-row justify-center items-center p-4 gap-4 xl:gap-0 w-full absolute md:static duration-500 ease-in z-50 ${
+        className={`nav_container flex flex-col xl:static xl:flex-row justify-center items-center p-4 gap-4 xl:gap-0 w-full absolute  duration-500 ease-in z-50 ${
           open ? "top-15" : "top-[-450px]"
         }`}
       >

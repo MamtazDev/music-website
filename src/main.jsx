@@ -12,7 +12,7 @@ import CreateTimeline from "./components/CreateTimeline/CreateTimeline.jsx";
 import Dashboard from "./components/Dashboard/Dashboard.jsx";
 import Register from "./components/Login/Register/Register.jsx";
 import MusicTimeline from "./components/MusicTimeline/MusicTimeline.jsx";
-import Layout from "./components/Layout/layout.jsx";
+import Layout from "./components/Layout/Layout.jsx";
 
 const router = createBrowserRouter([
   {
