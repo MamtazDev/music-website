@@ -5,7 +5,7 @@ const Stepper = () => {
   return (
     <div className="stepper">
       <div class="timeline-section ">
-        <div class="button_design">
+        <div className="text-center">
           <button class="button_design">1971</button>
         </div>
         <div class="timeline-items">
@@ -134,8 +134,8 @@ const Stepper = () => {
             </div>
           </div>
         </div>
-        <div class="button_design">
-          <button class="bottom_button_design">1971</button>
+        <div className="text-center">
+          <button class="button_design">1971</button>
         </div>
       </div>
     </div>

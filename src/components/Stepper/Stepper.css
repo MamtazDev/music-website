@@ -76,18 +76,6 @@
     line-height: 150%;
 }
 
-.bottom_button_design {
-    margin: auto;
-    width: 289px;
-    height: 117px;
-    border-radius: 8px;
-    background: var(--04, #202227);
-    color: var(--02, #F7E5CD);
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 150%;
-}
-
 
 .timeline-item:last-child {
     margin-bottom: 200px;
@@ -274,6 +262,11 @@
 
 /* responsive */
 @media(max-width: 768px) {
+    .button_design {
+        width: 206px;
+        height: 71px;
+    }
+
     .timeline-dot {
         height: 40px !important;
         width: 40px !important;
