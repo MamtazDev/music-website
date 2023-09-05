@@ -7,7 +7,7 @@ const Payment = () => {
         <div className="payment_1">
           <h3 className="text_design">Basic</h3>
           <h1 className="payment_number">$0.00</h1>
-          <button class="neutral_btn">Get started</button>
+          <button class="neutral_btn mb-0">Get started</button>
         </div>
         <div className="payment_2">
           <h3 className="text_design1">Premium</h3>

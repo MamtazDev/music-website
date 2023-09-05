@@ -58,8 +58,11 @@ const Login = () => {
             <Link to="/timeline">
               <button class="neutral_btn w-full">Sign In</button>
             </Link>
-            <div className="text-center">
-              <span have_an_account_text> Already have an account? </span>
+            <div style={{ marginTop: "40px" }} className="text-center">
+              <span className="have_an_account_text">
+                {" "}
+                Already have an account?{" "}
+              </span>
               <a href="/signup" class="sign_up_link">
                 Sign up
               </a>
