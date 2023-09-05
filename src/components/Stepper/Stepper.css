@@ -36,6 +36,27 @@
     margin-bottom: 40px;
     width: 100%;
     position: relative;
+    z-index: 999999;
+}
+
+.left_box::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    width: 50%;
+    z-index: -1;
+    border: 2px dashed #8E6147;
+}
+
+.right_box::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 50%;
+    width: 50%;
+    z-index: -1;
+    border: 2px dashed #8E6147;
 }
 
 .first_timeline {
@@ -89,7 +110,7 @@
     background-size: 100%;
     position: absolute;
     border-radius: 50%;
-    top: 36% !important;
+    top: 31% !important;
     left: 46% !important;
     display: flex !important;
     justify-content: center !important;
@@ -110,6 +131,7 @@
     border: 1px solid var(--03, #8E6147);
     background: #EEE;
     box-shadow: 0px 7px 62px -2px rgba(0, 0, 0, 0.18);
+    z-index: 99999;
 }
 
 
