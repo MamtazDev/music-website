@@ -12,7 +12,7 @@ const MusicTimeline = () => {
         <h1 className="text-[#0F0609] leading-[150%] text-[32px] font-[600] mb-[30px]">
           My Music Timeline
         </h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[24px] mb-[142px]">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-[24px] mb-[142px]">
           {/* left side */}
           <div>
             <input
@@ -51,7 +51,7 @@ const MusicTimeline = () => {
               <div class="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50">
                 <div class="flex items-center justify-between px-3 py-2 border-b ">
                   <div class="flex flex-wrap items-center divide-gray-200 sm:divide-x ">
-                    <div class="flex items-center space-x-1 sm:pr-4">
+                    <div class="flex flex-wrap items-center space-x-1 sm:pr-4">
                       <button
                         type="button"
                         class="p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100"
@@ -142,7 +142,7 @@ const MusicTimeline = () => {
             <p className="share_text">Share this </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 center xs:items-center">
               <div className="facebookDiv">
-                <div className="flex ">
+                <div className="flex  ">
                   <img src={facebook} alt="" />
                 </div>
               </div>

@@ -28,19 +28,19 @@ const Stepper = () => {
                       Aenean commodo ligula eget dolor
                     </p>
                     <div className="edit_delete_icons">
-                      <span className="edit_icon">
+                      <button className="edit_icon">
                         <i class="fa-regular fa-pen-to-square"></i>
-                      </span>
-                      <span className="delete_icon">
+                      </button>
+                      <button className="delete_icon">
                         <i class="fa-solid fa-trash"></i>
-                      </span>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="timeline-item flex justify-end right_box">
+          <div class="timeline-item block lg:flex justify-start lg:justify-end right_box">
             <div class="timeline-dot">1982</div>
             <div class="timeline-date">
               <div class="timeline-content">
@@ -59,12 +59,12 @@ const Stepper = () => {
                       Aenean commodo ligula eget dolor
                     </p>
                     <div className="edit_delete_icons">
-                      <span className="edit_icon">
+                      <button className="edit_icon">
                         <i class="fa-regular fa-pen-to-square"></i>
-                      </span>
-                      <span className="delete_icon">
+                      </button>
+                      <button className="delete_icon">
                         <i class="fa-solid fa-trash"></i>
-                      </span>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -90,19 +90,19 @@ const Stepper = () => {
                       Aenean commodo ligula eget dolor
                     </p>
                     <div className="edit_delete_icons">
-                      <span className="edit_icon">
+                      <button className="edit_icon">
                         <i class="fa-regular fa-pen-to-square"></i>
-                      </span>
-                      <span className="delete_icon">
+                      </button>
+                      <button className="delete_icon">
                         <i class="fa-solid fa-trash"></i>
-                      </span>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="timeline-item flex justify-end right_box">
+          <div class="timeline-item block lg:flex justify-start lg:justify-end w-full right_box">
             <div class="timeline-dot">1982</div>
             <div class="timeline-date">
               <div class="timeline-content">
