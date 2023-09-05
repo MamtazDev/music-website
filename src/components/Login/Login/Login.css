@@ -1,65 +1,3 @@
-/* 
-.login_page_design {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
- .form_container {
-    height: 547px;
-    flex-shrink: 0;
-    border-radius: 12px;
-    background: var(--06, #FFF);
-    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.06);
-    text-align: center;
-    overflow: visible;
-    padding: 67px 85px;
-    border-radius: 12px;
-    background: var(--06, #FFF);
-    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.06);
-} 
-
-label {
-    text-align: left;
-    color: var(--01, #171717);
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-}
-
-.sign_up_link {
-    color: var(--03, #8E6147);
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    text-decoration-line: underline;
-}
-
-image {
-    width: 100% !important;
-}
-
-@media screen and (max-width: 767px) and (min-width:302px) {
-    .form_container {
-        padding: 50px 40px;
-        border-radius: 12px;
-        background: var(--06, #FFF);
-        box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.06);
-    }
-
-    .login_page_design {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center !important;
-    }
-
-} */
-
 .container {
     max-width: 1320px !important;
     margin: auto;
@@ -74,36 +12,34 @@ image {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 67px 85px;
 }
 
 .login_header {
     color: var(--neutral-900, #0F0609);
-    font-family: Poppins;
     font-size: 32px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 48px */
+    line-height: 150%;
     text-transform: capitalize;
 }
 
 .label_design {
     color: var(--01, #171717);
-    font-family: Poppins;
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 21px */
+    line-height: 150%;
+    /* 21px */
 }
 
-.input_field_design {
-    margin-bottom: 40px;
+.neutral_btn {
+    background: #212327;
+    padding: 12px 24px;
     color: var(--06, #FFF);
-    font-family: Poppins;
     font-size: 16px;
-    font-style: normal;
     font-weight: 600;
     line-height: 150%;
-    /* 24px */
+    margin-bottom: 40px;
+    width: 100%;
 }
 
 .login_input {
@@ -117,9 +53,7 @@ image {
 
 .sign_up_link {
     color: var(--03, #8E6147);
-    font-family: Poppins;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 150%;
     text-decoration-line: underline;

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import logo from "../../assets/Logo.png";
+import bell from "../../assets/bell.png";
+import bag from "../../assets/bag.png";
+import profile from "../../assets/profile.png";
 import "./Header.css";
 
 const Header = () => {
@@ -57,25 +60,27 @@ const Header = () => {
           />{" "}
         </Link>
       </li>
-      <li>
-        <Link to="/">
-          <i className="fa-regular fa-bell notification"></i>
-        </Link>
-      </li>
-      <li>
-        <Link to="/">
-          <i className="fa-solid fa-bag-shopping notification"></i>
-        </Link>
-      </li>
-      <li>
-        <Link to="/">
-          <i className="fa-regular fa-user notification"></i>
+
+      <li className="flex items-center">
+        <Link className="me-4" to="/">
+          <img src={bell} alt="" />
         </Link>
       </li>
 
-      {/* notification panel */}
+      <li className="flex items-center">
+        <Link className="me-4" to="/">
+          <img src={profile} alt="" />
+        </Link>
+      </li>
+
+      <li className="flex items-center">
+        <Link className="me-4" to="/">
+          <img src={bag} alt="" />
+        </Link>
+      </li>
     </>
   );
+
   return (
     <nav className="nav_container">
       <div className="lg:hidden flex flex-row items-center justify-between px-4 py-2">
@@ -94,7 +99,7 @@ const Header = () => {
         </div>
       </div>
       <ul
-        className={`nav_container lg:flex  justify-center items-center p-4  w-full absolute md:static duration-500 ease-in z-50 ${
+        className={`nav_container flex flex-col lg:flex-row justify-center items-center p-4  w-full absolute md:static duration-500 ease-in z-50 ${
           open ? "top-15" : "top-[-450px]"
         }`}
       >
