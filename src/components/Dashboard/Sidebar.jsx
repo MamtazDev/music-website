@@ -13,16 +13,17 @@ const Sidebar = () => {
   return (
     <div class={`dashbord-nav ${open && "toggleNavbar"} `} id="sidebar">
       {open ? (
-        <div class="toggle-btn" onClick={() => setOpen(false)}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      ) : (
-        <div onClick={() => setOpen(true)} class="toggle-close-btn lg:hidden">
-          &#10005;
-        </div>
-      )}
+         <div onClick={() => setOpen(false)} class="toggle-close-btn lg:hidden">
+         &#10005;
+       </div>
+      ) : ( 
+       
+        <div class="toggle-btn" onClick={() => setOpen(true)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+       )}
 
       <div class="search-input">
         <input id="search-input" placeholder="Search" type="text" />

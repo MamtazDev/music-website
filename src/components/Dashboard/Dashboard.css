@@ -334,8 +334,8 @@
     #sidebar {
         position: absolute;
         top: 0px;
-        
-        left: 0px;
+        left: -313px ;
+        /* left: 0px; */
         width: 300px;
         height: 100%;
         background: white;
@@ -345,7 +345,7 @@
 
     .toggleNavbar {
 
-        left: -313px !important;
+        left: 0px !important;
     }
 
     #sidebar.active {
