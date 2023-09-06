@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import dashHome from "../../assets/dash-home.svg";
 
 import dollar from "../../assets/dash-dollar.svg";
@@ -8,13 +8,22 @@ import Support1 from "../../assets/dash-support1.svg";
 import User from "../../assets/dash-user.svg";
 
 const Sidebar = () => {
+  const [open, setOpen] = useState(false);
+
+  console.log(open, "open");
   return (
-    <div class="dashbord-nav" id="sidebar">
-      <div class="toggle-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+    <div class={`dashbord-nav ${open && "toggleNavbar"} `} id="sidebar">
+      {open ? (
+        <div class="toggle-btn" onClick={() => setOpen(false)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      ) : (
+        <div onClick={() => setOpen(true)} class="toggle-close-btn">
+          &#10005;
+        </div>
+      )}
 
       <div class="search-input">
         <input id="search-input" placeholder="Search" type="text" />
