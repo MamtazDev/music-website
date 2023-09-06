@@ -33,7 +33,7 @@
     font-style: normal;
     font-weight: 400;
     padding-left: 50px;
-    background-image: url(../img/dash-search.svg);
+    background-image: url(../../assets/dash-search.svg);
     background-repeat: no-repeat;
     background-position: left 20px center;
 }
@@ -101,7 +101,7 @@
     gap: 20px;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 991px) {
     .dashbord-wrapper .dashbord-main .dashbord-main-wrapper {
         grid-template-columns: 1fr;
     }
@@ -184,10 +184,6 @@
     font-family: Poppins;
     font-size: 20px;
     font-weight: 500;
-}
-
-.dashbord-wrapper .dashbord-main .dashbord-main-wrapper .dashbord-main-right {
-    /* Rounded sliders */
 }
 
 .dashbord-wrapper .dashbord-main .dashbord-main-wrapper .dashbord-main-right .subscription-card {
@@ -334,7 +330,7 @@
     #sidebar {
         position: absolute;
         top: 0px;
-        left: -313px ;
+        left: -313px;
         /* left: 0px; */
         width: 300px;
         height: 100%;

@@ -35,10 +35,14 @@
 .nav_container input {
     max-width: 327px;
     padding: 16px;
+    padding-left: 30px;
     flex-shrink: 0;
     border-radius: 12px;
     background: var(--greyscale-grey-100, #F5F5F5);
     width: 100%;
+    background-image: url('../../assets/Search.png');
+    background-repeat: no-repeat;
+    background-position: center left 2%;
 }
 
 .nav_container input::placeholder {

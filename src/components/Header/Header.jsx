@@ -13,7 +13,6 @@ const Header = () => {
 
   const [open, setOpen] = useState(false);
   const toggleResponsive = () => {
-    console.log("clickl");
     setIsResponsive((prevState) => !prevState);
   };
 
@@ -57,7 +56,7 @@ const Header = () => {
             type="text"
             className="input_design"
             placeholder="Find your favorite artists"
-          />{" "}
+          />
         </Link>
       </li>
 
