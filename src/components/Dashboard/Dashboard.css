@@ -330,10 +330,11 @@
     border-radius: 50%;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 991px) {
     #sidebar {
         position: absolute;
         top: 0px;
+        
         left: 0px;
         width: 300px;
         height: 100%;
@@ -343,6 +344,7 @@
     }
 
     .toggleNavbar {
+
         left: -313px !important;
     }
 

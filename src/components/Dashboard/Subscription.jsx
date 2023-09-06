@@ -30,7 +30,8 @@ const Subscription = () => {
         <div class="subscription-card-title">
           <h4>My Subscription</h4>
           <label class="switch">
-            <input type="checkbox" checked />
+            {/* <input type="checkbox" checked /> */}
+            <input type="checkbox" className="toggle toggle-info"  />
             <span class="slider round"></span>
           </label>
         </div>

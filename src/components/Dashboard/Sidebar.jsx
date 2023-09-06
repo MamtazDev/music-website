@@ -10,7 +10,6 @@ import User from "../../assets/dash-user.svg";
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
 
-  console.log(open, "open");
   return (
     <div class={`dashbord-nav ${open && "toggleNavbar"} `} id="sidebar">
       {open ? (
@@ -20,7 +19,7 @@ const Sidebar = () => {
           <span></span>
         </div>
       ) : (
-        <div onClick={() => setOpen(true)} class="toggle-close-btn">
+        <div onClick={() => setOpen(true)} class="toggle-close-btn lg:hidden">
           &#10005;
         </div>
       )}
