@@ -63,7 +63,7 @@ const MusicTimeline = () => {
       } catch (error) {
         console.error("Error parsing userTokens JSON:", error);
       }
-    } catch (error) {
+    } catch (error) { 
       console.error(
         "Error adding timeline item:",
         error.response?.data || error.message
@@ -76,8 +76,9 @@ const MusicTimeline = () => {
       .then((res) => res.json())
       .then((data) => setGetTimeline(data));
   }, []);
-  const handleDeleteBtn = (id) => {
 
+  const handleDeleteBtn = (id) => {
+    console.log("COnsole.d", id);
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
@@ -88,8 +89,6 @@ const MusicTimeline = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        console.log("Confirmed deletion for ID:", id);
-
         axios
           .delete(`http://localhost:5000/api/timeline/${id}`, {
             headers: {
@@ -97,15 +96,15 @@ const MusicTimeline = () => {
             },
           })
           .then((res) => {
-            console.log("Delete response status:", res.status);
-            console.log("Delete response data:", res.data);
-
             if (res.status === 200) {
               const remaining = getTimeline.filter(
                 (timeline) => timeline._id !== id
               );
               setGetTimeline(remaining);
               Swal.fire("Deleted!", "Your file has been deleted.", "success");
+
+              // Use the response data here
+              console.log(res.data); // This will log the response data
             } else {
               Swal.fire("Error", "Failed to delete the item.", "error");
             }

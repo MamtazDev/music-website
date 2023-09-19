@@ -7,7 +7,6 @@ import { useUser } from "../../../Provider/UserProvider";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const history = useHistory();
   const navigate = useNavigate();
   const { setUser } = useUser();
   const handleEmailChange = (event) => {
@@ -17,87 +16,6 @@ const Login = () => {
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
   };
-
-  /*  const handleLogin = async () => {
-    try {
-      const response = await fetch("http://localhost:5000/api/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
-
-      if (response.status === 200) {
-        const data = await response.json();
-        console.log("Login success:", data);
-        navigate("/timeline");
-      } else {
-        const errorData = await response.json();
-        console.error("Login error:", errorData.message);
-      }
-    } catch (error) {
-      console.error("Error during login:", error);
-    }
-  };
- */
-  /*   const handleLogin = async () => {
-    try {
-      const response = await fetch("http://localhost:5000/api/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
-
-      if (response.status === 200) {
-        const data = await response.json();
-        console.log("Login success:", data);
-        navigate("/timeline");
-        
-        setUser(data.user);
-
-      } else {
-        const errorData = await response.json();
-        console.error("Login error:", errorData.message);
-      }
-    } catch (error) {
-      console.error("Error during login:", error);
-    }
-  }; */
-  /*   const handleLogin = async () => {
-    try {
-      const response = await fetch("http://localhost:5000/api/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
-  
-      if (response.status === 200) {
-        const data = await response.json();
-        console.log("Login success:", data);
-          let userTokens = JSON.parse(localStorage.getItem("userTokens")) || [];
-  
-        // Add the user's auth token as an object to the array
-        userTokens.push({
-          userId: data.user.id,
-          auth: data.auth,
-          email:data.user.email
-        });
-          localStorage.setItem("userTokens", JSON.stringify(userTokens));
-          setUser(data.user);
-          navigate("/timeline");
-      } else {
-        const errorData = await response.json();
-        console.error("Login error:", errorData.message);
-      }
-    } catch (error) {
-      console.error("Error during login:", error);
-    }
-  }; */
 
   const handleLogin = async () => {
     try {

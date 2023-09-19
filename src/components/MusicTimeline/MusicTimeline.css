@@ -1,3 +1,9 @@
+.swal2-container{
+    z-index: 999999999 !important;
+}
+
+
+
 .music_container {
     margin-bottom: 142px !important;
 }

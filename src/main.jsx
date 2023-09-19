@@ -14,7 +14,7 @@ import Register from "./components/Login/Register/Register.jsx";
 import MusicTimeline from "./components/MusicTimeline/MusicTimeline.jsx";
 import Layout from "./components/Layout/layout.jsx";
 import { UserProvider } from "./Provider/UserProvider.jsx";
-// import PrivateRoute from "./Provider/PrivateRoute.jsx";
+import PrivateRoute from "./Provider/PrivateRoute.jsx";
 
 const router = createBrowserRouter([
   {
