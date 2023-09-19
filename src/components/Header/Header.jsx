@@ -5,11 +5,15 @@ import bell from "../../assets/bell.png";
 import bag from "../../assets/bag.png";
 import profile from "../../assets/profile.png";
 import "./Header.css";
+import { useUser } from "../../Provider/UserProvider";
 
 const Header = () => {
-  const userData = JSON.parse(localStorage.getItem("users"));
   const [isResponsive, setIsResponsive] = useState(false);
+  const userTokensJSON = localStorage.getItem("userTokens");
+  const userTokens = JSON.parse(userTokensJSON);
+  const email = userTokens ? userTokens[0].email : "";
   let location = useLocation();
+  const { user } = useUser();
 
   const [open, setOpen] = useState(false);
   const toggleResponsive = () => {
@@ -51,7 +55,7 @@ const Header = () => {
       </li>
 
       <li className="me-[56px]">
-        <Link>
+        <Link >
           <input
             type="text"
             className="input_design"
@@ -75,6 +79,13 @@ const Header = () => {
       <li className="flex items-center">
         <Link className="" to="/">
           <img src={bag} alt="" />
+        </Link>
+      </li>
+      <li className="flex items-center">
+        <Link className="" to="/">
+          <Link to="/dashboard" style={{ color: "white", marginLeft: "5px" }}>
+            {email && ` Hello, ${email.split("@")[0]}`}
+          </Link>
         </Link>
       </li>
     </>

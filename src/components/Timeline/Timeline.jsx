@@ -9,14 +9,13 @@ const Timeline = () => {
           <div className=" create_timeline">
             <h3 className="text_design create_text">Create timeline</h3>
             <Link to="/musicTimeline" className="w-full">
-              <button class="neutral_btn">Create Now</button>
+              <button className="neutral_btn">Create Now</button>
             </Link>
           </div>
           <div className="create_timeline">
             <h3 className="text_design create_text">Edit timeline</h3>
             <Link to="/createTimeline" className="w-full">
-              {" "}
-              <button class="neutral_btn">Edit Now</button>
+              <button className="neutral_btn">Edit Now</button>
             </Link>
           </div>
         </div>

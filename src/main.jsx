@@ -12,7 +12,9 @@ import CreateTimeline from "./components/CreateTimeline/CreateTimeline.jsx";
 import Dashboard from "./components/Dashboard/Dashboard.jsx";
 import Register from "./components/Login/Register/Register.jsx";
 import MusicTimeline from "./components/MusicTimeline/MusicTimeline.jsx";
-import Layout from "./components/Layout/Layout.jsx";
+import Layout from "./components/Layout/layout.jsx";
+import { UserProvider } from "./Provider/UserProvider.jsx";
+// import PrivateRoute from "./Provider/PrivateRoute.jsx";
 
 const router = createBrowserRouter([
   {
@@ -42,14 +44,22 @@ const router = createBrowserRouter([
       },
       {
         path: "/dashboard",
-        element: <Dashboard />,
+        element: (
+          <Dashboard />
+
+          // <PrivateRoute>
+          //   <Dashboard />
+          // </PrivateRoute>
+        ),
       },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <UserProvider>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </UserProvider>
+  // {/* </React.StrictMode> */}
 );

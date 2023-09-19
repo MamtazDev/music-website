@@ -11,56 +11,56 @@ const Sidebar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div class={`dashbord-nav ${open && "toggleNavbar"} `} id="sidebar">
+    <div className={`dashbord-nav ${open && "toggleNavbar"} `} id="sidebar">
       {open ? (
-        <div onClick={() => setOpen(false)} class="toggle-close-btn lg:hidden">
+        <div onClick={() => setOpen(false)} className="toggle-close-btn lg:hidden">
           &#10005;
         </div>
       ) : (
-        <div class="toggle-btn" onClick={() => setOpen(true)}>
+        <div className="toggle-btn" onClick={() => setOpen(true)}>
           <span></span>
           <span></span>
           <span></span>
         </div>
       )}
 
-      <div class="search-input">
+      <div className="search-input">
         <input id="search-input" placeholder="Search" type="text" />
       </div>
 
       <nav>
-        <ul class="nav-wrapper">
-          <li class="nav-item">
+        <ul className="nav-wrapper">
+          <li className="nav-item">
             <img src={dashHome} alt="icon" />
-            <a class="nav-link" href="#home">
+            <a className="nav-link" href="#home">
               Home
             </a>
           </li>
 
-          <li class="nav-item">
+          <li className="nav-item">
             <img src={User} alt="icon" />
-            <a class="nav-link" href="#accounts">
+            <a className="nav-link" href="#accounts">
               Accounts
             </a>
           </li>
 
-          <li class="nav-item">
+          <li className="nav-item">
             <img src={dollar} alt="icon" />
-            <a class="nav-link" href="#payment-info">
+            <a className="nav-link" href="#payment-info">
               Payment Info
             </a>
           </li>
 
-          <li class="nav-item">
+          <li className="nav-item">
             <img src={Support} alt="icon" />
-            <a class="nav-link" href="#support">
+            <a className="nav-link" href="#support">
               Support
             </a>
           </li>
 
-          <li class="nav-item">
+          <li className="nav-item">
             <img src={Support1} alt="icon" />
-            <a class="nav-link" href="#support">
+            <a className="nav-link" href="#support">
               Support
             </a>
           </li>

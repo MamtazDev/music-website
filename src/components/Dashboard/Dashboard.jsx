@@ -12,13 +12,13 @@ import Subscription from "./Subscription";
 const Dashboard = () => {
   return (
     <div>
-      <div class="dashbord-wrapper">
+      <div className="dashbord-wrapper">
         <Sidebar />
 
-        <div class="dashbord-main">
+        <div className="dashbord-main">
           <DashboardHeader />
 
-          <div class="dashbord-main-wrapper">
+          <div className="dashbord-main-wrapper">
             <Profile />
 
             <Subscription />

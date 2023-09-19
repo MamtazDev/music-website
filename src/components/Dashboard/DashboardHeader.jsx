@@ -4,12 +4,12 @@ import Delete from "../../assets/dash-delete.svg";
 
 const DashboardHeader = () => {
   return (
-    <div class="dashbord-title">
-      <div class="title-name">
+    <div className="dashbord-title">
+      <div className="title-name">
         <h2>User Dashboard</h2>
       </div>
-      <div class="title-function">
-        <div class="function-wrap">
+      <div className="title-function">
+        <div className="function-wrap">
           <a href="#">
             <img src={edit} alt="icon" />
           </a>
