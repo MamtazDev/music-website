@@ -41,10 +41,6 @@ const MusicTimeline = () => {
       }
 
       try {
-        // const userTokens = JSON.parse(userTokensJSON);
-        // const token = userTokens[0]?.auth?.token;
-        console.log(token);
-        console.log(timelineData);
         if (token) {
           const response = await axios.post(
             "http://localhost:5000/api/timeline/items",
@@ -63,7 +59,7 @@ const MusicTimeline = () => {
       } catch (error) {
         console.error("Error parsing userTokens JSON:", error);
       }
-    } catch (error) { 
+    } catch (error) {
       console.error(
         "Error adding timeline item:",
         error.response?.data || error.message
