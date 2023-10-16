@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import axios from "axios";
 import "./MusicTimeline.css";
 import Stepper from "../Stepper/Stepper";
@@ -9,6 +9,7 @@ import apple from "../../assets/apple-music.png";
 import { useEffect } from "react";
 import Swal from "sweetalert2";
 const MusicTimeline = () => {
+  const scrollableRef = useRef(null);
   const userTokensJSON = localStorage.getItem("userTokens");
   const userTokens = JSON.parse(userTokensJSON);
   const token = userTokens[0]?.auth?.token;
@@ -22,6 +23,13 @@ const MusicTimeline = () => {
     myStory: "",
   });
 
+  function scrollToBottom() {
+    if (scrollableRef.current) {
+      scrollableRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+  function refreshPage() {}
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setTimelineData({
@@ -33,7 +41,6 @@ const MusicTimeline = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       if (!userTokensJSON) {
         console.error("userTokens not found in local storage.");
@@ -51,8 +58,12 @@ const MusicTimeline = () => {
               },
             }
           );
-
+          Swal.fire("Good job!", "You clicked the button!", "success");
           console.log("Timeline item added successfully:", response.data);
+
+          setTimeout(() => {
+            window.location.reload(false);
+          }, 1000);
         } else {
           console.error("Token not found in the userTokens array.");
         }
@@ -74,7 +85,6 @@ const MusicTimeline = () => {
   }, []);
 
   const handleDeleteBtn = (id) => {
-    console.log("COnsole.d", id);
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
@@ -98,9 +108,7 @@ const MusicTimeline = () => {
               );
               setGetTimeline(remaining);
               Swal.fire("Deleted!", "Your file has been deleted.", "success");
-
-              // Use the response data here
-              console.log(res.data); // This will log the response data
+              console.log(res.data);
             } else {
               Swal.fire("Error", "Failed to delete the item.", "error");
             }
@@ -163,7 +171,15 @@ const MusicTimeline = () => {
               defaultValue={timelineData.youtubeLinks}
               onChange={handleInputChange}
             />
-            <button className="btn create_music_button">Create</button>
+            <button
+              className="btn create_music_button"
+              onClick={() => {
+                // refreshPage();
+                // scrollToBottom();
+              }}
+            >
+              Create
+            </button>
           </form>
           {/* right side */}
           <div>
@@ -288,10 +304,11 @@ const MusicTimeline = () => {
           </div>
         </div>
       </div>
-      {/* <Stepper /> */}
-      {/* {getTimeline.map((data) => ( */}
-      <Stepper data={getTimeline} handleDeletBtn={handleDeleteBtn} />
-      {/* ))} */}
+      <Stepper
+        data={getTimeline}
+        handleDeletBtn={handleDeleteBtn}
+        scrollableRef={scrollableRef}
+      />
     </div>
   );
 };

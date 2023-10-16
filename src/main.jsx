@@ -45,11 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: (
-          <Dashboard />
-
-          // <PrivateRoute>
-          //   <Dashboard />
-          // </PrivateRoute>
+          // <Dashboard />
+          <PrivateRoute>
+            <Dashboard />
+          </PrivateRoute>
         ),
       },
     ],
@@ -57,9 +56,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  // <React.StrictMode>
   <UserProvider>
     <RouterProvider router={router} />
   </UserProvider>
-  // {/* </React.StrictMode> */}
 );

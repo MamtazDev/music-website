@@ -1,12 +1,12 @@
 import React from "react";
 import "./Stepper.css";
-import { useState } from "react";
-import axios from "axios";
-const Stepper = ({ data, handleDeletBtn }) => {
-  const [isLoading, setIsLoading] = useState([]);
+// import { useState } from "react";
+// import axios from "axios";
+const Stepper = ({ data, handleDeletBtn,scrollableRef }) => {
+  // const [isLoading, setIsLoading] = useState([]);
 
   return (
-    <div className="stepper">
+    <div className="stepper" > 
       <div className="timeline-section ">
         <div className="text-center">
           <button className="button_design">1971</button>
@@ -52,7 +52,7 @@ const Stepper = ({ data, handleDeletBtn }) => {
             </div>
           ))}
         </div>
-        <div className="text-center">
+        <div className="text-center" ref={scrollableRef}>
           <button className="button_design">1971</button>
         </div>
       </div>
